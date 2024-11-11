@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  get method
+        // fetch("https://fakestoreapi.com/products").then(Response=>Response.json()).then(data=>console.log(data)).catch(error=>console.log(error))
+
+        // post method
+        fetch("https://fakestoreapi.com/users",{
+            "method":"post",
+            "content-type":"application / json",
+            "body":{
+                "userId":10,
+                "Id":101,
+                "title":"post method",
+                "body":"jayakrishna"
+            }
+        }).then(Response=>Response.json()).then(data=>console.log(data)).catch(error=>console.log(error))   
+        </script>
+</body>
+</html>
